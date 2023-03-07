@@ -1,0 +1,61 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.otp-field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otp-field input[type="text"] {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.otp-field input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.otp-field input[type="text"]:hover:not(:focus) {
+  border-color: #ccc;
+}
+
+.otp-field input[type="text"]:nth-child(1):focus ~ input[type="text"],
+.otp-field input[type="text"]:nth-child(2):focus ~ input[type="text"],
+.otp-field input[type="text"]:nth-child(3):focus ~ input[type="text"],
+.otp-field input[type="text"]:nth-child(4):focus ~ input[type="text"],
+.otp-field input[type="text"]:nth-child(5):focus ~ input[type="text"] {
+  border-color: #007bff;
+}
+
